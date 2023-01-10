@@ -17,7 +17,11 @@ while guess != ans:
   sleep(1)
   print(hint)
   guessagain = int(input("One more?"))
-  if guessagain is ans:
+  if guessagain > ans:
+      hint = ("hint : ↓")
+  elif guessagain < ans:
+      hint = ("hint : ↑")
+  elif guessagain is ans:
     sleep(1)
     print("FINALLYY")
     break
