@@ -8,7 +8,7 @@ username = input("Name please? ")
 guess = int(input(f"So {username}, what will be your choice?: "))
 
 if guess > ans:
-  hint= ("hint :  ")
+  hint= ("hint : ↓")
 elif guess < ans:
   hint = ("hint : ↑")
 
